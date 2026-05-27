@@ -12,7 +12,8 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
-app.use(express.json());
+app.use(express.json())
+
 
 // ==========================================
 // CẤU HÌNH SWAGGER (TÀI LIỆU API)
@@ -98,9 +99,11 @@ app.get('/health', (req, res) => {
 // Routes
 const authRouter = require('./routes/auth.routes');
 const userRouter = require('./routes/user.routes');
+const courseRouter = require('./routes/course.routes');
 
 app.use('/api/auth', authRouter);
 app.use('/api/user', userRouter);
+app.use('/api/course', courseRouter);
 
 // ==========================================
 // KHỞI ĐỘNG SERVER VÀ KẾT NỐI DATABASE
