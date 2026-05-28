@@ -40,7 +40,19 @@ const isAdmin = (req, res, next) => {
     next();
 };
 
+
+const isStudent = (req, res, next) => {
+    // RoleId = 3 là Student
+    if (!req.user || parseInt(req.user.RoleId) !== 3) {
+        return res.status(403).json({
+            message: 'Quyền truy cập bị từ chối! Bạn không phải là Sinh viên.'
+        });
+    }
+    next();
+};
+
 module.exports = {
     verifyToken,
-    isAdmin
+    isAdmin,
+    isStudent
 };

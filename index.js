@@ -100,10 +100,16 @@ app.get('/health', (req, res) => {
 const authRouter = require('./routes/auth.routes');
 const userRouter = require('./routes/user.routes');
 const courseRouter = require('./routes/course.routes');
+const departmentRouter = require('./routes/department.routes');
+const classRouter = require('./routes/class.routes');
+const enrollmentRouter = require('./routes/enrollment.routes');
 
 app.use('/api/auth', authRouter);
 app.use('/api/user', userRouter);
 app.use('/api/course', courseRouter);
+app.use('/api/department', departmentRouter);
+app.use('/api/class', classRouter);
+app.use('/api/enrollment', enrollmentRouter);
 
 // ==========================================
 // KHỞI ĐỘNG SERVER VÀ KẾT NỐI DATABASE
