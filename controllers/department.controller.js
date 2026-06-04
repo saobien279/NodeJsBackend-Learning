@@ -12,7 +12,7 @@ const getAllDepartments = async (req, res) => {
     } catch (error) {
         console.error('Lỗi lấy danh sách khoa:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ!',
             error: error.message
         });
     }
@@ -47,7 +47,7 @@ const getById = async (req, res) => {
     } catch (error) {
         console.error('Lỗi lấy chi tiết khoa:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ!',
             error: error.message
         });
     }
@@ -83,7 +83,7 @@ const createDepartment = async (req, res) => {
     } catch (error) {
         console.error('Lỗi tạo khoa:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ khi tạo khoa!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ khi tạo khoa!',
             error: error.message
         });
     }
@@ -126,7 +126,7 @@ const updateDepartment = async (req, res) => {
     } catch (error) {
         console.error('Lỗi cập nhật khoa:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ khi cập nhật khoa!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ khi cập nhật khoa!',
             error: error.message
         });
     }
@@ -158,7 +158,7 @@ const deleteDepartment = async (req, res) => {
     } catch (error) {
         console.error('Lỗi xóa khoa:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ khi xóa khoa!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ khi xóa khoa!',
             error: error.message
         });
     }

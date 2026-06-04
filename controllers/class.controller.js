@@ -96,7 +96,7 @@ const createClass = async (req, res) => {
     } catch (error) {
         console.error('Lỗi tạo lớp học:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ khi tạo lớp học!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ khi tạo lớp học!',
             error: error.message
         });
     }
@@ -152,7 +152,7 @@ const updateClass = async (req, res) => {
     } catch (error) {
         console.error('Lỗi cập nhật lớp học:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ khi cập nhật lớp học!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ khi cập nhật lớp học!',
             error: error.message
         });
     }
@@ -193,7 +193,7 @@ const changeStatus = async (req, res) => {
     } catch (error) {
         console.error('Lỗi thay đổi trạng thái lớp:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ khi cập nhật trạng thái lớp học!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ khi cập nhật trạng thái lớp học!',
             error: error.message
         });
     }

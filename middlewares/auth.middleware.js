@@ -17,7 +17,7 @@ const verifyToken = (req, res, next) => {
     try {
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
         // Gắn thông tin người dùng đã giải mã vào request để các controller sử dụng
-        req.user = decoded; 
+        req.user = decoded;
         next();
     } catch (err) {
         return res.status(403).json({

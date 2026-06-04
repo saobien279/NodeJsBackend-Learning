@@ -25,7 +25,7 @@ const getAllUser = async (req, res) => {
     } catch (error) {
         console.error('Lỗi lấy danh sách user:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ!',
             error: error.message
         });
     }
@@ -124,7 +124,7 @@ const addUser = async (req, res) => {
     } catch (error) {
         console.error('Lỗi thêm user:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ!',
             error: error.message
         });
     }
@@ -210,7 +210,7 @@ const updateUser = async (req, res) => {
     } catch (error) {
         console.error('Lỗi cập nhật user:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ!',
             error: error.message
         });
     }
@@ -262,7 +262,7 @@ const deleteUser = async (req, res) => {
     } catch (error) {
         console.error('Lỗi xóa user:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ!',
             error: error.message
         });
     }
@@ -317,7 +317,7 @@ const updateStatusUser = async (req, res) => {
     } catch (error) {
         console.error('Lỗi cập nhật trạng thái user:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ!',
             error: error.message
         });
     }

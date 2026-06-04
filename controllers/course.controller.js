@@ -14,7 +14,7 @@ const getAllCourses = async (req, res) => {
     } catch (error) {
         console.error('Lỗi lấy danh sách môn học:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ!',
             error: error.message
         });
     }
@@ -55,7 +55,7 @@ const getById = async (req, res) => {
     } catch (error) {
         console.error('Lỗi lấy thông tin môn học:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ!',
             error: error.message
         });
     }
@@ -121,7 +121,7 @@ const createCourse = async (req, res) => {
     } catch (error) {
         console.error('Lỗi tạo môn học:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ!',
+           // message: 'Đã xảy ra lỗi ở phía máy chủ!',
             error: error.message
         });
     }
@@ -195,7 +195,7 @@ const updateCourse = async (req, res) => {
     } catch (error) {
         console.error('Lỗi cập nhật môn học:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ!',
             error: error.message
         });
     }
@@ -240,7 +240,7 @@ const deleteCourse = async (req, res) => {
     } catch (error) {
         console.error('Lỗi xóa môn học:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ!',
             error: error.message
         });
     }

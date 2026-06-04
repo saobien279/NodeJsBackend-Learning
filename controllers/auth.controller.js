@@ -64,7 +64,7 @@ const login = async (req, res) => {
     } catch (error) {
         console.error('Lỗi đăng nhập:', error);
         return res.status(500).json({
-            message: 'Đã xảy ra lỗi ở phía máy chủ!',
+            //message: 'Đã xảy ra lỗi ở phía máy chủ!',
             error: error.message
         });
     }
